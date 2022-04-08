@@ -23,7 +23,7 @@
     <div class="card-body">
       <p class="login-box-msg">Silahkan Login disini</p>
 
-      <form action="../../index3.html" method="post">
+      <form action="/dashboard" method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
