@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UKDW P.P | Dashboard</title>
+  <title>UKDW P.P | Form Pengajuan</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -72,7 +72,7 @@
           <img src="style/dist/img/avatar01.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Admin</a>
+          <a href="#" class="d-block">Jevon Hendro S</a>
         </div>
       </div>
 
@@ -82,7 +82,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -113,13 +113,13 @@
             </a>
             <ul class="nav nav-treeview">
             <li class="nav-item">
-                <a href="fpinjam.php" class="nav-link">
+                <a href="fpinjam.blade.php" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Peminjaman</p>
                 </a>
               </li>
             <li class="nav-item">
-                <a href="../forms/general.html" class="nav-link">
+                <a href="/welcome/fpinjam.blade.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Booking</p>
                 </a>
@@ -137,78 +137,25 @@
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
+    <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Form Peminjaman</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>50</h3>
-
-                <p>Barang Tersedia</p>
-              </div>
-              <div class="icon">
-                <i class="nav-icon fas fa-th"></i>
-              </div>
-              <a href="#" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>5<sup style="font-size: 20px"></sup></h3>
-
-                <p>Barang dipinjam</p>
-              </div>
-              <div class="icon">
-                <i class="nav-icon fas fa-book"></i>
-              </div>
-              <a href="#" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-            
-              <div class="inner">
-                <h3>3</h3>
-
-                <p>Notifikasi</p>
-              </div>
-              <div class="icon">
-                <i class="far fa-bell"></i>
-              </div>
-              <a href="#" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
@@ -230,7 +177,68 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-  </div>
+    <div class="content-wrapper">
+    <!-- From Peminjaman Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Form Peminjaman</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+            
+            <div class="card-body">
+                  <div class="form-group">
+                    <label for="InputDate">Tanggal Pinjam</label>
+                    <div class="col-sm-3">
+                    <input type="date" class="form-control" id="inputdate">
+            </div>
+                <div class="form-group">
+                    <div class="col-sm-3 float-right">
+                    <label for="InputDate">Peralatan yang akan dipinjam</label>
+                    <select class="form-control">
+                          <option>WebCam</option>
+                          <option>Mic</option>
+                          <option>Headset</option>
+                          <option>Tripod</option>
+                          <option>Modem</option>
+                        </select>
+            </div>
+                  <div class="form-group">
+                    <label for="InputDate">Tanggal Selesai</label>
+                    <div class="col-sm-3">
+                    <input type="date" class="form-control" id="Choosedate" placeholder="masukandate">
+            </div>
+                  <div class="form-group">
+                    <label for="InputNik">Nik</label>
+                    <input type="string" class="form-control" id="Nikanda">
+            </div>
+                  <div class="form-group">
+                    <label for="Inputnama">Nama Dosen</label>
+                    <input type="name" class="form-control" id="name">
+            </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+                 <div class="form-group">
+                    <label>Keterangan</label>
+                    <textarea class="form-control" rows="3" placeholder="masukan ..."></textarea>
+            </div>
+            </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              
+            </div>
+  </aside>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <strong>Copyright &copy; Renaldi-Jevon <a href="https://adminlte.io">UKDW P.P</a>.</strong>
@@ -247,6 +255,7 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
+<!-- Content Wrapper. Contains page content -->
 
 <!-- jQuery -->
 <script src="{{ asset('style/plugins/jquery/jquery.min.js') }}"></script>
