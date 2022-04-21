@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,75 +70,60 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="style/dist/img/avatar01.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="style/dist/img/avatar02.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Jevon Hendro S</a>
+          <a href="#" class="d-block">Renaldi Soeryadi</a>
         </div>
       </div>
 
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
+<!-- Sidebar Menu -->
+<nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
+<!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="/dashboard" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
               </p>
             </a>
+</li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="pages/widgets.html" class="nav-link active">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Data Barang
               </p>
             </a>
-          </li>
+</li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Data Peminjaman
+                Buat Notifikasi
               </p>
             </a>
-            <li class="nav-item menu-open">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Ijin Pengajuan
-                <i class="right fas fa-angle-left"></i>
-                </p>
-            </a>
-            <ul class="nav nav-treeview">
+</li>
             <li class="nav-item">
-                <a href="dashoard/fpinjam" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Peminjaman</p>
-                </a>
-              </li>
-            <li class="nav-item">
-                <a href="../forms/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Booking</p>
-                </a>
-              </li>
-              </ul>
-</li> 
-          <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Riwayat Peminjaman
-              </p>
+            <i class="nav-icon fas fa-user"></i>
+            <p>
+                Data Peminjam
+            </p>
             </a>
-   
-      <!-- /.sidebar-menu -->
+</li>
+            <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-table"></i>
+            <p>
+                Laporan Pengembalian.
+            </p>
+            </a>
+</li>
     </div>
-    <!-- /.sidebar -->
-  </aside>
+    </aside>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -185,7 +171,7 @@
               <div class="inner">
                 <h3>5<sup style="font-size: 20px"></sup></h3>
 
-                <p>Barang dipinjam</p>
+                <p>Barang yang dipinjam</p>
               </div>
               <div class="icon">
                 <i class="nav-icon fas fa-book"></i>
@@ -201,7 +187,7 @@
               <div class="inner">
                 <h3>3</h3>
 
-                <p>Notifikasi</p>
+                <p>Notifikasi Pengajuan</p>
               </div>
               <div class="icon">
                 <i class="far fa-bell"></i>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,101 +139,101 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-<!-- /.sidebar -->
-<!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-<!-- Content Header (Page header) -->
-    <section class="content-header">
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-12">
-            <h1 style="text-align:center;">Data Barang</h1>
-          </div>
-        </div>
-      </div>
-<!-- /.container-fluid -->
-    </section>
-<!-- Main content -->
+          <div class="col-sm-6">
+            <h1 class="m-0">Dashboard</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
         <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Data Barang</h3>
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>50</h3>
+
+                <p>Barang Tersedia</p>
+              </div>
+              <div class="icon">
+                <i class="nav-icon fas fa-th"></i>
+              </div>
+              <a href="#" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>5<sup style="font-size: 20px"></sup></h3>
+
+                <p>Barang dipinjam</p>
+              </div>
+              <div class="icon">
+                <i class="nav-icon fas fa-book"></i>
+              </div>
+              <a href="#" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+            
+              <div class="inner">
+                <h3>3</h3>
+
+                <p>Notifikasi</p>
+              </div>
+              <div class="icon">
+                <i class="far fa-bell"></i>
+              </div>
+              <a href="#" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+                </div>
+                <!-- /. tools -->
               </div>
               <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example2" class="table table-bordered table-hover">
-                  <thead>
-                  <tr>
-                    <th>ID_Barang</th>
-                    <th>Nama Barang</th>
-                    <th>Stok</th>
-                    <th>Status</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Web Cam Logitech C615</td>
-                    <td>3</td>
-                    <td>Tersedia<td>
-            </tr>
-                  <tr>
-                    <td>1.1</td>
-                    <td>Web Cam Logitech C310 </td>
-                    <td>5</td>
-                    <td>Tersedia</td>
-            </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Mic Audio-Technica BP40</td>
-                    <td>3</td>
-                    <td>Tersedia</td>
-            </tr>
-                  <tr>
-                    <td>2.1</td>
-                    <td>Mic Rode PodMic</td>
-                    <td>3</td>
-                    <td>Tersedia</td>
-            </tr>
-                  <tr>
-                    <td>2.2</td>
-                    <td>Mic Neuman BCM705</td>
-                    <td>3</td>
-                    <td>Tersedia</td>
-            </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Modem Smartfren M2S</td>
-                    <td>5</td>
-                    <td>Tersedia</td>
-            </tr>
-                  <tr>
-                    <td>3.1</td>
-                    <td>Modem Smartfren M2Y</td>
-                    <td>3</td>
-                    <td>Tersedia</td>
-            </tr>
-                  <tr>
-                    <td>3.2</td>
-                    <td>Modem Huawei E5373s</td>
-                    <td>3</td>
-                    <td>Tersedia</td>
-            </tr>
-        </tfoot>
-    </table>
-    </div>    
-</div>
-    </div>    
-</div>    
-    </div>
-</div> 
-
-</aside> 
-<!-- /.Bagian Copyright content-wrapper -->
-<footer class="main-footer">
+              <div class="card-body pt-0">
+                <!--The calendar -->
+                <div id="calendar" style="width: 100%"></div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
     <strong>Copyright &copy; Renaldi-Jevon <a href="https://adminlte.io">UKDW P.P</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
@@ -243,11 +244,10 @@
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
-</aside>
+  </aside>
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-<!-- Content Wrapper. Contains page content -->
 
 <!-- jQuery -->
 <script src="{{ asset('style/plugins/jquery/jquery.min.js') }}"></script>
