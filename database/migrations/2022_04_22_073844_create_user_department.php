@@ -27,6 +27,6 @@ class CreateUserDepartment extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_department');
+        Schema::dropIfExists('department');
     }
 }
