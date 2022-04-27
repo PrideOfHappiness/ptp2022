@@ -87,7 +87,7 @@
             </a>
 </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="/barang" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Data Barang
@@ -103,7 +103,7 @@
             </a>
 </li>
             <li class="nav-item">
-            <a href="/peminjam" class="nav-link">
+            <a href="#" class="nav-link active">
             <i class="nav-icon fas fa-user"></i>
             <p>
                 Data Peminjam
@@ -124,98 +124,70 @@
 <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
 <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-12">
-            <h1 style="text-align:center;">Data Barang</h1>
-          </div>
-        </div>
-      </div>
-<!-- /.container-fluid -->
-    </section>
-<!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Data Barang</h3>
+<div class="col-md-12">
+          <div class="card card-primary card-outline">
+            <div class="card-header">
+              <h3 class="card-title">Peminjam</h3>
+
+              <div class="card-tools">
+                <div class="input-group input-group-sm">
+                  <input type="text" class="form-control" placeholder="Search Peminjam">
+                  <div class="input-group-append">
+                    <div class="btn btn-primary">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- /.card-tools -->
+            </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>ID_Barang</th>
-                    <th>Nama Barang</th>
-                    <th>Stok</th>
-                    <th>Status</th>
+                    <th>Check</th>
+                    <th>NIK</th>
+                    <th>Barang dipinjam</th>
+                    <th>Batas Waktu</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
-                    <td>1</td>
+                    <td><div class="icheck-primary">
+                        <input type="checkbox" value="" id="check1">
+                        <label for="check1"></label>
+                      </div></td>
+                    <td>72190291</td>
                     <td>Web Cam Logitech C615</td>
-                    <td>3</td>
-                    <td>Tersedia<td>
+                    <td>30 Maret 2022<td>
             </tr>
-                  <tr>
-                    <td>1.1</td>
-                    <td>Web Cam Logitech C310 </td>
-                    <td>5</td>
-                    <td>Tersedia</td>
+            <tr>
+                    <td><div class="icheck-primary">
+                        <input type="checkbox" value="" id="check2">
+                        <label for="check1"></label>
+                      </div></td>
+                    <td>72190291</td>
+                    <td>Mic Audio-TechnicaBP40</td>
+                    <td>30 Maret 2022<td>
             </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Mic Audio-Technica BP40</td>
-                    <td>3</td>
-                    <td>Tersedia</td>
+            <tr>
+                    <td><div class="icheck-primary">
+                        <input type="checkbox" value="" id="check1">
+                        <label for="check1"></label>
+                      </div></td>
+                    <td>72190291</td>
+                    <td>Modem SmartfrenM25</td>
+                    <td>30 Maret 2022<td>
             </tr>
-                  <tr>
-                    <td>2.1</td>
-                    <td>Mic Rode PodMic</td>
-                    <td>3</td>
-                    <td>Tersedia</td>
-            </tr>
-                  <tr>
-                    <td>2.2</td>
-                    <td>Mic Neuman BCM705</td>
-                    <td>3</td>
-                    <td>Tersedia</td>
-            </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Modem Smartfren M2S</td>
-                    <td>5</td>
-                    <td>Tersedia</td>
-            </tr>
-                  <tr>
-                    <td>3.1</td>
-                    <td>Modem Smartfren M2Y</td>
-                    <td>3</td>
-                    <td>Tersedia</td>
-            </tr>
-                  <tr>
-                    <td>3.2</td>
-                    <td>Modem Huawei E5373s</td>
-                    <td>3</td>
-                    <td>Tersedia</td>
-            </tr>
-            <div class="card-footer">
-                  <button type="button" class="btn btn-primary" >Tambah</button>
-                  <button type="button" class="btn btn-warning" >Edit</button>
-                </div>
         </tfoot>
     </table>
     </div>    
 </div>
     </div>    
 </div>    
-    </div>
-</div> 
-
+</div>
+</section>
 </aside> 
 <!-- /.Bagian Copyright content-wrapper -->
 <footer class="main-footer">

@@ -13,21 +13,38 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Dosen
-Route::get('/dosen', function () {
-    return view('dosen/login');
+Route::get('/', function () {
+    return view('/login');
+});
+Route::get('/registrasi', function () {
+    return view('dosen/registrasi');
 });
 
-Route::get('/dashboarddosen', function () {
+
+Route::get('/dashboard', function () {
     return view('dosen/dashboard');
 });
-
-//Admin
-Route::get('/admin', function () {
-    return view('admin/login');
+Route::get('/dashboard', function () {
+    return view('admin/dashboardadmin');
 });
 
-Route::get('/dashboardadmin', function () {
-    return view('admin/dashboard');
+Route::get('/booking', function () {
+    return view('dosen/fpinjamdosen');
+});
+Route::get('/buatnotif', function () {
+    return view('admin/buatnotifadmin');
 });
 
+Route::get('/barang', function () {
+    return view('dosen/databarangdosen');
+});
+Route::get('/barang', function () {
+    return view('admin/databarangadmin');
+});
+
+Route::get('/riwayat', function () {
+    return view('dosen/rpinjamdosen');
+});
+Route::get('/peminjam', function () {
+    return view('admin/datapeminjam');
+});
