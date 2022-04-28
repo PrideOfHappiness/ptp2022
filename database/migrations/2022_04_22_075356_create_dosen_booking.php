@@ -13,9 +13,8 @@ class CreateDosenBooking extends Migration
      */
     public function up()
     {
-        Schema::create('dosen_booking', function (Blueprint $table) {
-            $table->increments('id');
-            $table->bigInteger('booking_id');
+        Schema::create('peminjaman/booking', function (Blueprint $table) {
+            $table->id()->unsigned();
             $table->date('tgl_pinjam');
             $table->date('tgl_selesai');
             $table->date('tgl_booking');

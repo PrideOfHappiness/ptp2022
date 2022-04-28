@@ -14,7 +14,7 @@ class CreateUserDepartment extends Migration
     public function up()
     {
         Schema::create('department', function (Blueprint $table) {
-            $table->increments('department_id');
+            $table->id()->unsigned();
             $table->string('nama_department');
             $table->timestamps();
         });
